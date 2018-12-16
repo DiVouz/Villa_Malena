@@ -310,22 +310,22 @@
                             <img src="img/HousePhotos/house16.jpg" style="width:100%">
                         </div>
                         <div class="mySlides1">
-                            <img src="img/HousePhotos/house17.jpg" style="width:100%">
+                            <img src="img/HousePhotos/house17.webp" style="width:100%">
                         </div>
                         <div class="mySlides1">
-                            <img src="img/HousePhotos/house18.jpg" style="width:100%">
+                            <img src="img/HousePhotos/house18.webp" style="width:100%">
                         </div>
                         <div class="mySlides1">
-                            <img src="img/HousePhotos/house19.jpg" style="width:100%">
+                            <img src="img/HousePhotos/house19.webp" style="width:100%">
                         </div>
                         <div class="mySlides1">
-                            <img src="img/HousePhotos/house20.jpg" style="width:100%">
+                            <img src="img/HousePhotos/house20.webp" style="width:100%">
                         </div>
                         <div class="mySlides1">
-                            <img src="img/HousePhotos/house21.jpg" style="width:100%">
+                            <img src="img/HousePhotos/house21.webp" style="width:100%">
                         </div>
                         <div class="mySlides1">
-                            <img src="img/HousePhotos/house22.jpg" style="width:100%">
+                            <img src="img/HousePhotos/house22.webp" style="width:100%">
                         </div>
 
                         <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
@@ -374,41 +374,40 @@
     </div>
 
 <script>
-    var navHeight = $("#navi").height();
     //Navigate in site
     $("#buttonFindMore").click(function() {
         $('html, body').animate({
-            scrollTop: $("#services").offset().top-navHeight
+            scrollTop: $("#services").offset().top-$("#navi").height()
         }, 1000);
     });
 
     $("#buttonServices").click(function() {
         $('html, body').animate({
-            scrollTop: $("#services").offset().top-navHeight
+            scrollTop: $("#services").offset().top-$("#navi").height()
         }, 1000);
     });
 
     $("#buttonDescription").click(function() {
         $('html, body').animate({
-            scrollTop: $("#description").offset().top-navHeight
+            scrollTop: $("#description").offset().top-$("#navi").height()
         }, 1000);
     });
 
     $("#buttonImages").click(function() {
         $('html, body').animate({
-            scrollTop: $("#images").offset().top-navHeight
+            scrollTop: $("#images").offset().top-$("#navi").height()
         }, 1000);
     });
 
     $("#buttonMap").click(function() {
         $('html, body').animate({
-            scrollTop: $("#map").offset().top-navHeight
+            scrollTop: $("#map").offset().top-$("#navi").height()
         }, 1000);
     });
 
     $("#buttonContact").click(function() {
         $('html, body').animate({
-            scrollTop: $("#contact").offset().top-navHeight
+            scrollTop: $("#contact").offset().top-$("#navi").height()
         }, 1000);
     });
 
