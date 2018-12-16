@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/marketing.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -49,21 +50,30 @@
           right: 0;
           border-radius: 3px 0 0 3px;
         }
+
+        .chip {
+          display: inline-block;
+          padding: 0 25px;
+          height: 50px;
+          font-size: 16px;
+          line-height: 50px;
+          border-radius: 25px;
+          background-color: #f1f1f1;
+        }
     </style>
 </head>
 
 <body>
     <div class="header">
-        <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed" id="navi">
             <a class="pure-menu-heading" href="#">Villa Malena</a>
 
             <ul class="pure-menu-list">
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link" id="buttonServices">Services</a></li>
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link" id="buttonDescription">Description</a></li>
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link" id="buttonImages">Images</a></li>
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link" id="buttonMap">Map</a></li>
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link" id="buttonPeople">People</a></li>
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link" id="buttonContact">Contact</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link" id="buttonServices" style="color:white;">Services</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link" id="buttonDescription" style="color:white;">Description</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link" id="buttonImages" style="color:white;">Images</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link" id="buttonMap" style="color:white;">Map</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link" id="buttonContact" style="color:white;">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -71,12 +81,8 @@
     <div class="splash-container" style="background-image: url('img/HousePhotos/house19.jpg'); background-repeat: no-repeat; background-size: cover;">
         <div class="splash">
             <h1 style="background-color: #ffffffb0; color: #1f8dd6;" class="splash-head"><b>Villa Malena</b></h1>
-            <p class="splash-subhead">
-                Holiday rental villa on Skopelos island.
-            </p>
-            <p>
-                <a href="#" id="buttonFindMore" class="pure-button pure-button-primary">Find more</a>
-            </p>
+            <p class="splash-subhead" style="font-weight: bold;">Holiday rental villa on Skopelos island.</p>
+            <p><a href="#" id="buttonFindMore" class="pure-button pure-button-primary">Find more</a></p>
         </div>
     </div>
 
@@ -85,19 +91,42 @@
         <div class="content" id="services">
             <h3 class="content-head is-center">Our services</h3>
 
+            <div class="is-center">
+                <div class="chip">
+                    <i class="fas fa-users"></i>
+                    6 guests
+                </div>
+                    
+                <div class="chip">
+                    <i class="fas fa-bed"></i>
+                    3 bedrooms
+                </div>
+
+                <div class="chip">
+                    <i class="fas fa-bath"></i>
+                    2 bathrooms
+                </div>
+            </div>
+
             <div class="pure-g">
                 <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
 
                     <h3 class="content-subhead">
                         <i class="fas fa-bed"></i>
                         Beds & Baths
+                        <i class="fas fa-bath"></i>
                     </h3>
                     <p>
                         <ul>
-                            <li>2 Double Beds</li>
-                            <li>2 Sofa Beds</li>
-                            <li>2 Single Beds</li>
-                            <li>2 Family bathrooms</li>
+                            <li>
+                                3 bedrooms
+                                <ul>
+                                    <li>Bedroom 1: 2 single beds</li>
+                                    <li>Bedroom 2: 1 double bed</li>
+                                    <li>Bedroom 3: 1 double bed</li>
+                                </ul>
+                            </li>
+                            <li>2 bathrooms</li>
                         </ul>
                     </p>
                 </div>
@@ -297,7 +326,7 @@
                         </div>
                         <div class="mySlides1">
                             <img src="img/HousePhotos/house22.jpg" style="width:100%">
-                        </div>               
+                        </div>
 
                         <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
                         <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
@@ -311,124 +340,82 @@
 
             <div class="pure-g is-center">
                 <div class="pure-u-1-1" style="">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3092.9971226553394!2d23.621940315551115!3d39.17478613815019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDEwJzI5LjIiTiAyM8KwMzcnMjYuOSJF!5e0!3m2!1sen!2sgr!4v1532474830652" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.4675773579612!2d23.625930204470553!3d39.17070220665149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDEwJzE1LjMiTiAyM8KwMzcnMzYuMiJF!5e1!3m2!1sen!2sgr!4v1544984287358" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
+        <div class="content l-box-lrg" id="contact">
+                <h2 class="content-head is-center">Contact with us for more information</h2>
 
-        <div class="content is-center" id="people">
-            <div class="pure-g">
-                <div class="pure-u-1-1">
-                    <h3 class="content-head is-center">What people said about us</h3>
-                    
-                    <div class="slideshow-container">
-                        <div class="mySlides2">
-                            <img src="img/avatar.png" alt="Avatar" style="width:100px; border-radius:50%;">
-                            <h3>WOW!</h3>
+                <div class="pure-g is-center" style="padding:5%;">
+                    <div class="pure-u-lg-1-2 pure-u-md-1-2 pure-u-sm-1-1">
+                        <h4 style="letter-spacing:1px; font-weight:normal;">
                             <p>
-                                Mpla mpla mpla
+                                Telephone: <span style="font-weight:bold;">(+30) 6945249464</span>
                             </p>
-                        </div>
-
-                        <div class="mySlides2">
-                            <img src="img/avatar.png" alt="Avatar" style="width:100px; border-radius:50%;">
-                            <h3>Best!</h3>
                             <p>
-                                Mpli mpli mpli
+                                Email: <span style="font-weight:bold;">kallorf26@gmail.com</span>
                             </p>
-                        </div>
+                        </h4>
+                    </div>
 
-                        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                    <div class="pure-u-lg-1-2 pure-u-md-1-2 pure-u-sm-1-1">
+                        <h4>
+                            <a href="https://www.facebook.com/Villa-Malena-Skopelos-1933760483348052/" target="_blank">
+                                <i class="fab fa-facebook fa-4x" style="color:#2d3e50;"></i>
+                            </a>
+                        </h4>
                     </div>
                 </div>
-            </div>
         </div>
 
-        <div class="ribbon l-box-lrg" id="contact">
-            <h2 class="content-head is-center" style="color:white;">Contact with us for more information</h2>
-
-            <div class="pure-g is-center" style="padding:5%;">
-                <div class="pure-u-lg-1-3 pure-u-md-1-3 pure-u-sm-1-1">
-                    <h4 style="color:white; letter-spacing:1px;">
-                        <p>
-                            Phone: <b>69********</b>
-                        </p>
-                        <p>
-                            Email: <b>****@****.com</b>
-                        </p>
-                    </h4>
-                </div>
-
-                <div class="pure-u-lg-1-3 pure-u-md-1-3 pure-u-sm-1-1">
-                    <h4>
-                        <a href="#">
-                            <img src="img/holidaylettings.png" alt="holidaylettings" style="width:65%;">
-                        </a>
-                    </h4>
-                </div>
-
-                <div class="pure-u-lg-1-3 pure-u-md-1-3 pure-u-sm-1-1">
-                    <h4>
-                        <a href="#">
-                            <i class="fab fa-facebook fa-4x" style="color:white;"></i>
-                        </a>
-                    </h4>
-                </div>
-            </div>
-        </div>
+        <div class="ribbon l-box-lrg" style="padding:16px;">License number EOT (Greek Tourism  Organization): 0756K9200041001</div>
 
     </div>
 
 <script>
+    var navHeight = $("#navi").height();
     //Navigate in site
     $("#buttonFindMore").click(function() {
         $('html, body').animate({
-            scrollTop: $("#services").offset().top
-        }, 1500);
+            scrollTop: $("#services").offset().top-navHeight
+        }, 1000);
     });
 
     $("#buttonServices").click(function() {
         $('html, body').animate({
-            scrollTop: $("#services").offset().top
-        }, 1500);
+            scrollTop: $("#services").offset().top-navHeight
+        }, 1000);
     });
 
     $("#buttonDescription").click(function() {
         $('html, body').animate({
-            scrollTop: $("#description").offset().top
-        }, 1500);
+            scrollTop: $("#description").offset().top-navHeight
+        }, 1000);
     });
 
     $("#buttonImages").click(function() {
         $('html, body').animate({
-            scrollTop: $("#images").offset().top
-        }, 1500);
+            scrollTop: $("#images").offset().top-navHeight
+        }, 1000);
     });
 
     $("#buttonMap").click(function() {
         $('html, body').animate({
-            scrollTop: $("#map").offset().top
-        }, 1500);
-    });
-
-    $("#buttonPeople").click(function() {
-        $('html, body').animate({
-            scrollTop: $("#people").offset().top
-        }, 1500);
+            scrollTop: $("#map").offset().top-navHeight
+        }, 1000);
     });
 
     $("#buttonContact").click(function() {
         $('html, body').animate({
-            scrollTop: $("#contact").offset().top
-        }, 1500);
+            scrollTop: $("#contact").offset().top-navHeight
+        }, 1000);
     });
 
     //Image slide show
     var slideIndex = [1,1];
-    var slideId = ["mySlides1", "mySlides2"]
+    var slideId = ["mySlides1"];
     showSlides(1, 0);
-    showSlides(1, 1);
 
     function plusDivs(n) {
       showDivs(slideIndex += n);
