@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Website info about Malena Villa.">
-    
+    <!-- <link rel="icon" href="img/favicon.icon" type="icon"> -->
     <title>Villa Malena</title>
     
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
@@ -60,21 +60,68 @@
           border-radius: 25px;
           background-color: #f1f1f1;
         }
+
+        .topnav {
+		  overflow: hidden;
+		  background-color: #333;
+		}
+
+		.topnav a {
+		  float: left;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+
+		.topnav .icon {
+		  display: none;
+		}
+
+		@media screen and (max-width: 600px) {
+		  .topnav a:not(:first-child) {display: none;}
+		  .topnav a.icon {
+		    float: right;
+		    display: block;
+		  }
+		}
+
+		@media screen and (max-width: 600px) {
+		  .topnav.responsive {position: relative;}
+		  .topnav.responsive .icon {
+		    position: absolute;
+		    right: 0;
+		    top: 0;
+		  }
+		  .topnav.responsive a {
+		    float: none;
+		    display: block;
+		    text-align: left;
+		  }
+		}
+
+		.topnav.responsive #buttonServices  {
+	   		margin-top: 50px;
+	  	}
     </style>
 </head>
 
 <body>
-    <div class="header">
+    <div class="header topnav" id="myNav">
         <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed" id="navi">
-            <a class="pure-menu-heading" href="#" style="color:#f5f5f5;">Villa Malena</a>
+            <a class="pure-menu-heading" href="#" style="color:#f5f5f5; float:left;">Villa Malena</a>
 
-            <ul class="pure-menu-list">
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link" id="buttonServices" style="color:#d0d0d0;">Services</a></li>
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link" id="buttonDescription" style="color:#d0d0d0;">Description</a></li>
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link" id="buttonImages" style="color:#d0d0d0;">Images</a></li>
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link" id="buttonMap" style="color:#d0d0d0;">Map</a></li>
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link" id="buttonContact" style="color:#d0d0d0;">Contact</a></li>
-            </ul>
+            <a href="#" id="buttonServices" style="color:#d0d0d0;">Services</a>
+            <a href="#" id="buttonDescription" style="color:#d0d0d0;">Description</a>
+            <a href="#" id="buttonImages" style="color:#d0d0d0;">Images</a>
+            <a href="#" id="buttonMap" style="color:#d0d0d0;">Map</a>
+            <a href="#" id="buttonContact" style="color:#d0d0d0;">Contact</a>
+        	
+        	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
         </div>
     </div>
 
@@ -460,6 +507,16 @@
 
         $this.text(linkText);
     });
+
+    //mavigation responsive
+    function myFunction() {
+	  var x = document.getElementById("myNav");
+	  if (x.className === "topnav") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "topnav";
+	  }
+	}
 </script>
 
 </body>
