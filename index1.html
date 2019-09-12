@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="gr" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	    <meta name="description" content="Boasting a seasonal outdoor swimming pool and a garden, Villa Malena offers accommodation in Glóssa with free WiFi and sea views.">
+	    <meta name="keywords" content="Villa Malena, villa, Malena, Μαλενα, Skopelos, Glossa, Glóssa, loutraki, accommodations, rent, greece, holiday rentals">
+
+		<title>Villa Malena</title>
+    
+    	<link rel="icon" href="img/logo.ico">
+
+		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+		<style>
+			.body {
+				margin: 0;
+
+				font-family: sans-serif;
+			}
+
+			.navbar{
+				top: 0;
+
+				width: 100%;
+				padding: 1vh 0vw;
+								
+				background-color: #2d3e50;
+				box-shadow: 0 1px 1px rgba(0,0,0,.1);
+
+
+				position: sticky;
+				z-index: 3;
+			}
+
+			.navMoreButLi {
+	       		float: right;
+    			padding: 0px 54px;
+	        }
+
+	        .navMoreButI {
+	        	color: #f5f5f5;
+	        }
+
+			.navbar li {
+				display: inline;
+			}
+			
+			.navbarLi {
+				padding: 14px 18px;
+			}
+
+			.navLogo {
+				text-decoration: none;
+				color: #f5f5f5;
+
+				font-size: 20px;
+				font-weight: 400;
+			}
+
+			.navTextMd {
+				text-decoration: none;
+				color: #d0d0d0;
+			}
+
+			.navDivSm {
+				padding: 14px;
+			}
+
+			.navTextSm {
+				text-decoration: none;
+				color: #d0d0d0;
+				padding-left: 40px;
+			}
+
+			.conImg {
+				height: 90vh;
+
+				background-image: url("img/HousePhotos/house19.jpg");
+				background-attachment: fixed;
+			    background-position: center;
+			    background-repeat: no-repeat;
+			    background-size: cover;
+			}
+
+			.mainLogo {
+				left: 0;
+				right: 0;
+			    bottom: 0;
+			    top: 0;
+
+			    height: 50%;
+			    width: 50%;
+
+				margin: auto;
+
+				position: absolute;
+
+			    text-align: center;
+
+			    position: fixed;
+
+			    z-index: 1;
+			}
+
+			.boxLogo {
+				background-color: #ffffffb0;
+    			color: #0075c3;
+
+    			font-weight: 700;
+    			font-size: calc(10px + 2.5vw);;
+
+    			border: 3px solid #fff;
+    			border-radius: 5px;
+
+			    padding: 5vh 2vw;
+			}
+
+			.secTextLogo {
+				color: #fff;
+			    opacity: 0.8;
+			    font-weight: bold;
+			    font-size: 16px;
+			    padding: 4vh 0;
+			}
+
+			.buttonLogo {
+				color: #0075c3;
+				background: #fff;
+				border-radius: 5px;
+    			font-size: 120%;
+    			padding: 1.2vh 1vw;
+			    width: 25%;
+			    cursor: pointer;
+			    margin: auto;
+			}
+
+			.container {
+				z-index: 2;
+				position: relative;
+				text-align: center;
+
+				padding: 5vh 3vw;
+			}
+
+			.conWhite {
+    			background-color: white;
+			}
+
+			.conBlue {
+    			background-color: #2d3e50;
+			}
+
+			.conTitle {
+				font-weight: 400;
+				letter-spacing: .1em;
+			}
+
+			.whTitle {
+				color: #34495e;
+			}
+
+			.blTitle {
+				color: white;
+			}
+
+			.whText {
+				color:#6a7171;
+				line-height: 1.7em;
+			}
+
+			.blText {
+				color: #d0d0d0;
+			}
+
+			.chip {
+	        	display: inline-block;
+	          	
+	          	padding: 18px 25px;
+	          	margin: 4px;
+
+	          	font-size: 16px;
+	          	border-radius: 25px;
+	          	
+	          	background-color: #f1f1f1;
+    			color: #4b5252;
+	        }
+
+	        .whSubTitle {
+	        	color:#0075c3;
+	        }
+
+	        .showMoreSerBut {
+	        	color: #0077c5;
+	        	text-decoration: underline;
+	        	cursor: pointer;
+	        }
+
+	        .serBox {
+	        	text-align: left;
+	        }
+
+	        .slides {display: none}
+	        img {vertical-align: middle;}
+
+	        .slideshow {
+	         	max-width: 1000px;
+	          	position: relative;
+	          	margin: auto;
+	        }
+
+	        .slidePrev, .slideNext {
+	          	cursor: pointer;
+	          	position: absolute;
+	          	top: 50%;
+	          	width: auto;
+	          	padding: 16px;
+	          	margin-top: -22px;
+	          	color: black;
+	          	font-weight: bold;
+	          	font-size: 18px;
+	          	transition: 0.6s ease;
+	          	user-select: none;
+	          	background-color: rgba(255, 255, 255, 0.5)
+	        }
+
+	        .slidePrev:hover, .slideNext:hover {
+			  	background-color: rgba(255, 255, 255, 0.9)
+			}
+
+	        .slidePrev{
+	            left: 0;
+	            border-radius: 0 3px 3px 0;
+	        }
+
+	        .slideNext {
+	          	right: 0;
+	          	border-radius: 3px 0 0 3px;
+	        }
+
+	        .contactTitle {
+	        	letter-spacing: 1px;
+    			font-weight: normal;
+	        }
+
+	        .contactText {
+	        	font-weight:bold;
+	        	color:#34495e;
+	        	font-size: 19px;
+	        }
+
+	        .footer {
+	        	z-index: 2;
+				position: relative;
+				text-align: center;
+
+				padding: 1vh 0vw;
+				color: #d0d0d0;
+
+				font-size: 15px;
+				line-height: 20px;
+	        }
+
+	        .creator {
+	        	color: #d0d0d0;
+	        }
+
+		   	.button {
+				cursor: pointer;
+			}
+
+	        .navMoreButLi {
+		    	display: none !important;
+		   	}
+
+	        @media (max-width: 1000px) {
+			   .navBut {
+			      display: none;
+			   }
+
+			   .navMoreButLi {
+			      display: block !important;
+			   }
+
+			   .mainLogo {
+					width: 90%;
+			   }
+
+			   .buttonLogo {
+			   		width: 35%;
+			   }
+			}
+		</style>
+	</head>
+
+	<body class="body">
+		<div class="conImg" id="conImg">
+			<div class="mainLogo">
+				<div class="boxLogo">VILLA MALENA</div>
+				<div class="secTextLogo">HOLIDAY RENTAL VILLA ON SKOPELOS ISLAND.</div>
+				<div class="buttonLogo" id="buttonFindMore">FIND MORE</div>
+			</div>
+		</div>
+
+		<div class="navbar" id="navbar">
+			<ul class="navMenu">
+               	<li class="navbarLi"><a href="#" class="navLogo" id="buttonLogo">VILLA MALENA</a></li>
+
+               	<span class="navBut">
+	                <li class="navbarLi"><a href="#" class="navTextMd" id="buttonServices">Services</a></li>
+	                <li class="navbarLi"><a href="#" class="navTextMd" id="buttonDescription">Description</a></li>
+	                <li class="navbarLi"><a href="#" class="navTextMd" id="buttonImages">Images</a></li>
+	                <li class="navbarLi"><a href="#" class="navTextMd" id="buttonMap">Map</a></li>
+	                <li class="navbarLi"><a href="#" class="navTextMd" id="buttonContact">Contact</a></li>
+	            </span>
+
+	            <li class="navMoreButLi">
+		            <a onclick="openNavBar()" class="button" aria-label="navigation">
+						<i class="fa fa-bars navMoreButI"></i>
+					</a>
+				</li>
+            </ul>
+
+            <div class="navButSm">
+            	<div class="navDivSm"><a href="#" class="navTextSm" id="buttonServicesSm">Services</a></div>
+				<div class="navDivSm"><a href="#" class="navTextSm" id="buttonDescriptionSm">Description</a></div>
+	            <div class="navDivSm"><a href="#" class="navTextSm" id="buttonImagesSm">Images</a></div>
+	            <div class="navDivSm"><a href="#" class="navTextSm" id="buttonMapSm">Map</a></div>
+	            <div class="navDivSm"><a href="#" class="navTextSm" id="buttonContactSm">Contact</a></div>
+            </div>
+		</div>
+
+		<div class="container conWhite" id="services">
+			<h3 class="conTitle whTitle">OUR SERVICES</h3>
+
+			<div>
+				<div class="chip">
+	                <i class="fas fa-users"></i>
+	                6 guests
+	            </div>
+	                
+	            <div class="chip">
+	                <i class="fas fa-bed"></i>
+	                3 bedrooms
+	            </div>
+
+	            <div class="chip">
+	                <i class="fas fa-bath"></i>
+	                2 bathrooms
+	            </div>
+            </div>
+
+            <div class="pure-g">
+                <div class="serBox pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                    <h3 class="whSubTitle">
+                        <i class="fas fa-bed"></i>
+                        Beds & Baths
+                        <i class="fas fa-bath"></i>
+                    </h3>
+
+                    <ul class="whText">
+                        <li>
+                            3 bedrooms
+                            <ul>
+                                <li>Bedroom 1: 2 single beds</li>
+                                <li>Bedroom 2: 1 double bed</li>
+                                <li>Bedroom 3: 1 double bed</li>
+                            </ul>
+                        </li>
+                        <li>2 bathrooms</li>
+                    </ul>
+                </div>
+
+                <div class="serBox pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                    <h3 class="whSubTitle">
+                        <i class="fas fa-child"></i>
+                        Family
+                    </h3>
+
+                    <ul class="whText">
+                        <li>Maximum occupation: 6 people</li>
+                    	<li>Great for children of all ages</li>
+                    </ul>
+                </div>
+
+                <div class="serBox pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                    <h3 class="whSubTitle">
+                        <i class="fas fa-plus"></i>
+                        Amenities
+                    </h3>
+
+                    <ul class="whText">
+                        <li><i class="fas fa-wifi"></i> Wi-Fi available</li>
+                        <li><i class="fas fa-swimming-pool"></i> Private outdoor pool</li>
+                        <li><i class="fas fa-bath"></i> Jacuzzi or hot tub</li>
+                        <li><i class="fas fa-snowflake"></i> Air conditioning</li>
+
+                        <span id="servicesToHide" style="display:none;">
+                            <li><i class="far fa-eye"></i> Mountain Views</li>
+                            <li><i class="far fa-eye"></i> Sea view</li>
+                            <li><i class="fas fa-fire"></i> Fireplace</li>
+                            <li><i class="fas fa-tv"></i> TV</li>
+                            <li><i class="fas fa-tv"></i> Satellite TV</li>
+                            <li><i class="fas fa-phone"></i> Telephone</li>
+                            <li><i class="fas fa-compact-disc"></i> CD player</li>
+                            <li><i class="fas fa-compact-disc"></i> DVD player</li>
+                            <li><i class="far fa-check-circle"></i> BBQ</li>
+                            <li><i class="far fa-check-circle"></i> Solarium or roof terrace</li>
+                            <li><i class="far fa-check-circle"></i> Central heating</li>
+                            <li><i class="far fa-check-circle"></i> Cooker</li>
+                            <li><i class="far fa-check-circle"></i> Freezer</li>
+                            <li><i class="far fa-check-circle"></i> Toaster</li>
+                            <li><i class="far fa-check-circle"></i> Dishwasher</li>
+                            <li><i class="far fa-check-circle"></i> Iron</li>
+                            <li><i class="far fa-check-circle"></i> Hair dryer</li>
+                            <li><i class="far fa-check-circle"></i> Towels provided</li>
+                            <li><i class="far fa-check-circle"></i> Private garden</li>
+                            <li><i class="far fa-check-circle"></i> Patio</li>
+                            <li><i class="far fa-check-circle"></i> Balcony or terrace</li>
+                            <li><i class="far fa-check-circle"></i> Fridge</li>
+                            <li><i class="far fa-check-circle"></i> Microwave</li>
+                            <li><i class="far fa-check-circle"></i> Kettle</li>
+                            <li><i class="far fa-check-circle"></i> Washing machine</li>
+                            <li><i class="far fa-check-circle"></i> Linen provided</li>
+                        </span>
+
+                        <a class="showMoreSerBut" id="servicesMoreButton">Show More</a>
+                    </ul>
+                </div>
+
+                <div class="serBox pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                    <h3 class="whSubTitle">
+                        <i class="fas fa-car"></i>
+                        Access
+                    </h3>
+                    <ul class="whText">
+                        <li>Parking</li>
+                        <li>Secure parking</li>
+                    </ul>
+                </div>
+            </div>
+		</div>
+
+		<div class="container conBlue" id="description">
+			<h3 class="conTitle blTitle">DESCRIPTION</h3>
+			
+			<div class="blText">
+				<p>
+                    Malena is a newly built luxury, spacious villa (130sq meters) with private swimming pool, set in a picturesque, quiet location, less than one kilometre from the traditional Greek village of <b>Glossa</b> (walking distance).
+                </p>
+
+                <p>
+                    This charming resort, built in a private property of 5 acress, offers guests the opportunity to admire a breathtaking sea view overlooking Aegean and fantastic sunsets.
+                </p>
+
+                <p>
+                    Free Wi Fi is available. Also you can use the telephone for local calls free of charge.
+                </p>
+
+                <p>
+                    From infinity style pool you can look over a pine-cloaked hillside, the island of Skiathos and all the way out to the sea.
+                </p>
+
+                <span id="descriptionToHide" style="display:none;">
+
+                <p>
+                    The villa is situated four kilometres from Loutraki harbour, where you can find a selection of shops, cafeterias and restaurants by the sea.
+                </p>
+
+                <p>
+                    The detached villa Malena is tastefully furnished and the ground floor consists of a spacious, airy and light lounge with a sattelite TV and a DVD player, a dining room, a bathroom and a fully equipped open-planned kitchen, which communicates with a covered terrace, where you may have breakfast or meal by staring to the magnificent sea view.
+                </p>
+
+                <p>
+                    Upstairs the villa boasts comfortable accommodation in two double and one twin air conditioned bedrooms, also features one jakuzzi bathroom. All bedrooms are airy, sunny and share a large veranda, where you can admire the truly panoramic view.
+                </p>
+
+                <p>
+                    The villa is ideal for couples and families with children, who want to spend their vacations in a luxury, quiet, totaly private surrounding with magnificent view to the sea and the islands of Skiathos.
+                </p>
+
+                <p>
+                    For the construction high quality materials have been used such as italian wardrobes and cupbords, double glaze windows etc.
+                </p>
+
+                <p>
+                    A short drive distance (6km) is St. John (church on the rock where Mama Mia was filmed) and also near are the famous beaches Kastani, Milia and Panormos bay.
+                </p>
+
+                </span>
+
+                <p>
+                    <a class="showMoreSerBut" id="descriptionMoreButton">Show More</a>
+                </p>
+			</div>
+		</div>
+
+		<div class="container conWhite" id="images">
+			<div class="slideshow">
+                <div class="slides">
+                    <img src="img/HousePhotos/house1.jpg" alt="houseImage" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="img/HousePhotos/house2.jpg" alt="houseImage" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="img/HousePhotos/house3.jpg" alt="houseImage" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="img/HousePhotos/house4.jpg" alt="houseImage" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="img/HousePhotos/house5.jpg" alt="houseImage" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="img/HousePhotos/house6.jpg" alt="houseImage" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="img/HousePhotos/house7.jpg" alt="houseImage" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="img/HousePhotos/house8.jpg" alt="houseImage" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="img/HousePhotos/house9.jpg" alt="houseImage" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="img/HousePhotos/house10.jpg" alt="houseImage" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="img/HousePhotos/house11.jpg" alt="houseImage" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="img/HousePhotos/house12.jpg" alt="houseImage" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="img/HousePhotos/house13.jpg" alt="houseImage" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="img/HousePhotos/house14.jpg" alt="houseImage" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="img/HousePhotos/house15.jpg" alt="houseImage" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="img/HousePhotos/house16.jpg" alt="houseImage" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="img/HousePhotos/house17.jpg" alt="houseImage" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="img/HousePhotos/house18.jpg" alt="houseImage" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="img/HousePhotos/house19.jpg" alt="houseImage" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="img/HousePhotos/house20.jpg" alt="houseImage" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="img/HousePhotos/house21.jpg" alt="houseImage" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="img/HousePhotos/house22.jpg" alt="houseImage" style="width:100%">
+                </div>
+
+                <a class="slidePrev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="slideNext" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+		</div>
+
+		<div class="container conBlue" id="map">
+			<h3 class="conTitle blTitle">MAP LOCATION</h3>
+
+			<div>
+				<iframe style="height:70vh;" width="100%" height="500" src="https://maps.google.com/maps?q=39.170924%2C%2023.626727&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+			</div>
+		</div>
+
+		<div class="container conWhite" id="contact">
+			<h3 class="conTitle whTitle">CONTACT US FOR MORE INFORMATION</h3>
+
+			<div class="pure-g">
+				<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                    <h4 class="whText">
+						<span class="contactTitle">Telephone:</span>
+						<a class="contactText" href="tel:+306945249464">(+30) 69 4524 9464</a>
+                    </h4>
+                        
+                    <h4 class="whText">
+                        <span class="contactTitle">Email:</span>
+                        <a class="contactText" href="mailto:kallorf26@gmail.com">kallorf26@gmail.com</a>
+                	</h4>
+                </div>
+
+                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                    <h4>
+                        <a href="https://www.facebook.com/Villa-Malena-Skopelos-1933760483348052/" target="_blank" aria-label="Facebook" rel="noopener">
+                            <i class="fab fa-facebook fa-5x" style="color:#2d3e50;"></i>
+                        </a>
+                    </h4>
+                </div>
+			</div>
+		</div>
+
+		<div class="footer conBlue">
+			<div class="pure-g">
+				<div class="pure-u-1 pure-u-md-2-5">Copyright &copy; 2019 Villamalenaskopelos.com. All Rights Reserved</div>
+				<div class="pure-u-1 pure-u-md-2-5">License number EOT (Greek Tourism  Organization): 0756K9200041001</div>
+				<div class="pure-u-1 pure-u-md-1-6">Made by <a href="https://divouz.github.io/DiVouz/" target="_blank" aria-label="Creator" rel="noopener" class="creator">DiVouz</a></div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			$(document).ready( resizeObjects );
+
+	        $(window).resize( resizeObjects );
+
+			function resizeObjects() {
+				$(".conImg").css('height', $(window).height() - $(".navbar").outerHeight());
+			}
+
+			$("#buttonFindMore").click(function() {
+		        $('html, body').animate({
+		            scrollTop: $("#services").offset().top-$("#navbar").height()
+		        }, 1000);
+		    });
+
+			$("#buttonLogo").click(function() {
+		        $('html, body').animate({
+		            scrollTop: $("#conImg").offset().top
+		        }, 1000);
+		    });
+
+		    $("#buttonServices, #buttonServicesSm").click(function() {
+		        $('html, body').animate({
+		            scrollTop: $("#services").offset().top-$("#navbar").height()
+		        }, 1000);
+		    });
+
+		    $("#buttonDescription, #buttonDescriptionSm").click(function() {
+		        $('html, body').animate({
+		            scrollTop: $("#description").offset().top-$("#navbar").height()
+		        }, 1000);
+		    });
+
+		    $("#buttonImages, #buttonImagesSm").click(function() {
+		        $('html, body').animate({
+		            scrollTop: $("#images").offset().top-$("#navbar").height()
+		        }, 1000);
+		    });
+
+		    $("#buttonMap, #buttonMapSm").click(function() {
+		        $('html, body').animate({
+		            scrollTop: $("#map").offset().top-$("#navbar").height()
+		        }, 1000);
+		    });
+
+		    $("#buttonContact, #buttonContactSm").click(function() {
+		        $('html, body').animate({
+		            scrollTop: $("#contact").offset().top-$("#navbar").height()
+		        }, 1000);
+		    });
+
+		    var slideIndex = 1;
+		    var slideId = ["slides"];
+		    showSlides(1);
+
+		    function plusDivs(n) {
+		      showDivs(slideIndex += n);
+		    }
+
+		    function plusSlides(n) {
+		      showSlides(slideIndex += n);
+		    }
+
+		    function showSlides(n) {
+		        var i;
+		        var x = document.getElementsByClassName(slideId);
+		        if (n > x.length) {slideIndex = 1}    
+		        if (n < 1) {slideIndex = x.length}
+		        for (i = 0; i < x.length; i++) {
+		            x[i].style.display = "none";  
+		        }
+		        x[slideIndex-1].style.display = "block";
+		    }
+
+		    $("#servicesMoreButton").click(function() {
+		        var $this = $(this); 
+		        var $content = $("#servicesToHide");
+		        var linkText = $this.text();
+
+		        $content.toggle(1000);
+
+		        if(linkText === "Show More"){
+		            linkText = "Show Less";
+		        } else {
+		            linkText = "Show More";
+		        };
+
+		        $this.text(linkText);
+		    });
+
+		    $("#descriptionMoreButton").click(function() {
+		        var $this = $(this); 
+		        var $content = $("#descriptionToHide");
+		        var linkText = $this.text();
+
+		        $content.toggle(1000);
+
+		        if(linkText === "Show More"){
+		            linkText = "Show Less";
+		        } else {
+		            linkText = "Show More";
+		        };
+
+		        $this.text(linkText);
+		    });
+
+		    var navbarIsOpen = false;
+		    function openNavBar() {
+		    	$(".navButSm").toggle(1000);
+		    }
+
+		    var maxWidth = window.matchMedia("(max-width: 1000px)");
+		    myFunction(maxWidth);
+			maxWidth.addListener(myFunction);
+
+			function myFunction(x) {
+				if (!x.matches) {
+			    	$(".navButSm").hide();
+			  	}
+			}
+		</script>
+	</body>
+</html>
