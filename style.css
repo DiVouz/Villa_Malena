@@ -1,0 +1,281 @@
+.body {
+    margin: 0;
+
+    font-family: sans-serif;
+}
+
+.navbar{
+    top: 0;
+
+    width: 100%;
+    padding: 1vh 0vw;
+                    
+    background-color: #2d3e50;
+    box-shadow:  0px 0px 2px 1px rgba(0,0,0,0.3);
+
+
+    position: sticky;
+    z-index: 3;
+}
+
+.navMoreButLi {
+       float: right;
+    padding: 0px 54px;
+}
+
+.navMoreButI {
+    color: #f5f5f5;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbarLi {
+    padding: 14px 18px;
+}
+
+.navLogo {
+    text-decoration: none;
+    color: #f5f5f5;
+
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.navTextMd {
+    text-decoration: none;
+    color: #d0d0d0;
+}
+
+.navDivSm {
+    padding: 14px;
+}
+
+.navTextSm {
+    text-decoration: none;
+    color: #d0d0d0;
+    padding-left: 40px;
+}
+
+.conImg {
+    height: 90vh;
+
+    background-image: url("img/HousePhotos/house19.jpg");
+    background-attachment: fixed!important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainLogo {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+
+    height: 50%;
+    width: 50%;
+
+    margin: auto;
+
+    position: absolute;
+
+    text-align: center;
+
+    position: fixed;
+
+    z-index: 1;
+}
+
+.boxLogo {
+    background-color: #ffffffb0;
+    color: #0075c3;
+
+    font-weight: 700;
+    font-size: calc(10px + 2.5vw);;
+
+    border: 3px solid #fff;
+    border-radius: 5px;
+
+    padding: 5vh 2vw;
+}
+
+.secTextLogo {
+    color: #fff;
+    opacity: 0.8;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 4vh 0;
+}
+
+.buttonLogo {
+    color: #0075c3;
+    background: #fff;
+    border-radius: 5px;
+    font-size: 120%;
+    padding: 1.2vh 1vw;
+    width: 25%;
+    cursor: pointer;
+    margin: auto;
+}
+
+.container {
+    z-index: 2;
+    position: relative;
+    text-align: center;
+
+    padding: 5vh 3vw;
+}
+
+.conWhite {
+    background-color: white;
+}
+
+.conBlue {
+    background-color: #2d3e50;
+}
+
+.conTitle {
+    font-weight: 400;
+    letter-spacing: .1em;
+}
+
+.whTitle {
+    color: #34495e;
+}
+
+.blTitle {
+    color: white;
+}
+
+.whText {
+    color:#6a7171;
+    line-height: 1.7em;
+}
+
+.blText {
+    color: #d0d0d0;
+}
+
+.chip {
+    display: inline-block;
+      
+      padding: 18px 25px;
+      margin: 4px;
+
+      font-size: 16px;
+      border-radius: 25px;
+      
+      background-color: #f1f1f1;
+    color: #4b5252;
+}
+
+.whSubTitle {
+    color:#0075c3;
+}
+
+.showMoreSerBut {
+    color: #0077c5;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.serBox {
+    text-align: left;
+}
+
+.slides {display: none}
+img {vertical-align: middle;}
+
+.slideshow {
+     max-width: 1000px;
+      position: relative;
+      margin: auto;
+}
+
+.slidePrev, .slideNext {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      user-select: none;
+      background-color: rgba(255, 255, 255, 0.5)
+}
+
+.slidePrev:hover, .slideNext:hover {
+      background-color: rgba(255, 255, 255, 0.9)
+}
+
+.slidePrev{
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.slideNext {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+}
+
+.contactTitle {
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+.contactText {
+    font-weight:bold;
+    color:#34495e;
+    font-size: 19px;
+}
+
+.footer {
+    z-index: 2;
+    position: relative;
+    text-align: center;
+
+    padding: 1vh 0vw;
+    color: #d0d0d0;
+
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.creator {
+    color: #d0d0d0;
+}
+
+   .button {
+    cursor: pointer;
+}
+
+.navMoreButLi {
+    display: none !important;
+   }
+
+   .navButSm {
+    display: none;
+   }
+
+@media (max-width: 1000px) {
+   .navBut {
+      display: none;
+   }
+
+   .navMoreButLi {
+      display: block !important;
+   }
+
+   .mainLogo {
+        width: 90%;
+   }
+
+   .buttonLogo {
+           width: 35%;
+   }
+}
