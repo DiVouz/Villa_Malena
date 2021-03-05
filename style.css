@@ -4,7 +4,7 @@
     font-family: sans-serif;
 }
 
-.navbar{
+.navbar {
     top: 0;
 
     width: 100%;
@@ -13,13 +13,12 @@
     background-color: #2d3e50;
     box-shadow:  0px 0px 2px 1px rgba(0,0,0,0.3);
 
-
     position: sticky;
     z-index: 3;
 }
 
 .navMoreButLi {
-       float: right;
+    float: right;
     padding: 0px 54px;
 }
 
@@ -61,7 +60,7 @@
 .conImg {
     height: 90vh;
 
-    background-image: url("img/HousePhotos/house19.jpg");
+    background-image: url("img/HousePhotos/house17.jpg");
     background-attachment: fixed!important;
     background-position: center;
     background-repeat: no-repeat;
@@ -189,28 +188,28 @@
 img {vertical-align: middle;}
 
 .slideshow {
-     max-width: 1000px;
-      position: relative;
-      margin: auto;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
 
 .slidePrev, .slideNext {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      padding: 16px;
-      margin-top: -22px;
-      color: black;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      user-select: none;
-      background-color: rgba(255, 255, 255, 0.5)
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0.5)
 }
 
 .slidePrev:hover, .slideNext:hover {
-      background-color: rgba(255, 255, 255, 0.9)
+    background-color: rgba(255, 255, 255, 0.9)
 }
 
 .slidePrev{
@@ -219,8 +218,8 @@ img {vertical-align: middle;}
 }
 
 .slideNext {
-      right: 0;
-      border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 .contactTitle {
